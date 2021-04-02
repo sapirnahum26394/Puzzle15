@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text="Welcome to Game of Fifteen"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="25dp"
+        android:src="@drawable/puzzle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="34dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_music" />
+
+        <Switch
+            android:id="@+id/swch_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:paddingRight="10dp"
+            android:text="Music"
+            android:textOff="No"
+            android:textOn="Yes" />
+            android:text="Music" />
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:backgroundTint="#5C6BC0"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="Start Play"
+            android:textSize="12sp"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+</LinearLayout>
+
